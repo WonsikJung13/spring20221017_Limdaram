@@ -8,7 +8,5 @@ import lombok.Setter;
 public class JavaBean2 {
     private String company;
     private int score;
-    private String location;
-
 
 }
