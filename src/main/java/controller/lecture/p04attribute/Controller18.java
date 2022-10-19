@@ -38,7 +38,7 @@ public class Controller18 {
     }
 
     @RequestMapping("sub04")
-    public String method04(@ModelAttribute Student s) {
+    public String method04(Student s) {
         s.setName("Limdaram");
         s.setClassName("java");
         s.setStudentNumber("26");
