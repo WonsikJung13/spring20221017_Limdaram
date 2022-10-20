@@ -22,7 +22,7 @@ public class Controller23 {
              Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(sql);
              ) {
-            while (rs.next()) {
+            if (rs.next()) {
                 System.out.println(rs.getString("customerName"));
             }
         } catch (Exception e) {

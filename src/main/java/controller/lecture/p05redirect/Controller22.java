@@ -39,7 +39,7 @@ public class Controller22 {
         Student student = new Student();
         student.setName("daram");
         student.setClassName("spring");
-        student.setClassName("22");
+        student.setStudentNumber("22");
         return "redirect:/ex22/sub06";
     }
     @RequestMapping("sub06")
@@ -47,7 +47,7 @@ public class Controller22 {
         Student student = (Student) session.getAttribute("student");
         System.out.println(student.getName());
         System.out.println(student.getClassName());
-        System.out.println(student.getClassName());
+        System.out.println(student.getStudentNumber());
     }
     // RedirectAttributes로 객체 넘기기
     @RequestMapping("sub07")
