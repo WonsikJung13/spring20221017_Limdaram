@@ -19,7 +19,7 @@ CREATE TABLE StudentLecture (
     studentId INT NOT NULL,
     lectureId INT NOT NULL ,
     FOREIGN KEY (studentId) REFERENCES Student(id),
-    FOREIGN KEY (LectureId) REFERENCES Lecture(id),
+    FOREIGN KEY (lectureId) REFERENCES Lecture(id),
     PRIMARY KEY (studentId, lectureId)
 );
 
